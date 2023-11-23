@@ -50,22 +50,26 @@ const Sidebarmenu = ({ isOpen, onClose }: Props) => {
 
   return (
     <motion.div
-      className={`fixed top-0 left-0 h-full w-full bg-overlay z-50 ${isOverlayVisible ? 'block' : 'hidden'}`}
+      className={`fixed  top-0 left-0 h-full w-full bg-overlay z-50 ${isOverlayVisible ? 'block' : 'hidden'}`}
       initial="closed"
       animate={controls}
       variants={overlayVariants}
       onClick={onClose}
     >
       <motion.div
-        className="flex w-[343px] bg-white h-full  p-[24px]"
+        className="flex w-[343px] bg-white h-full flex-col justify-between  p-[24px]"
         initial="closed"
         animate={controls}
         variants={sidebarVariants}
         transition={bounceTransition}
         onClick={(e) => e.stopPropagation()}
       >
-       <div className='w-full space-y-[16px]' >
-         <div className='w-full items-center flex justify-between' >
+   
+   
+
+        <div className='w-full flex flex-col h-full justify-between' >
+          <div className='space-y-[16px]'  >
+             <div className='w-full items-center flex justify-between' >
            <h3 className='text-[16px] font-[500] font-poppins' >3legant</h3>
            <IconButton><Image onClick={onClose} className='cursor-pointer' src={close} alt="Close" /></IconButton>
          </div>
@@ -87,7 +91,11 @@ const Sidebarmenu = ({ isOpen, onClose }: Props) => {
               <a className='font-[500] font-poppins' href="/">Contact Us</a>
             </div>
          </div>
-         <div className='space-y-[19px] w-full h-[214px] justify-end flex flex-col' >
+
+          </div>
+        
+
+         <div className='space-y-[19px] w-full  flex flex-col' >
            <button className='bg-[#141718] font-[18px] text-white font-poppins w-full h-[52px] rounded-[6px]' >
              Sign In
            </button>
@@ -97,7 +105,10 @@ const Sidebarmenu = ({ isOpen, onClose }: Props) => {
                <Image className='cursor-pointer' src={youtupe} alt='social-media' /> 
            </div>
          </div>
+
        </div>
+      
+      
       </motion.div>
     </motion.div>
   );

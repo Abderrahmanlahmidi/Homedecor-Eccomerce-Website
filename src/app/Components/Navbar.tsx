@@ -10,6 +10,7 @@ import search from "@/app/assets/icons/search.png"
 import burger from "@/app/assets/icons/burger.svg"
 import IconButton from '@mui/material/IconButton';
 import Sidebarmenu from "./Sidebarmenu"
+import Bagsidebar from './Bagsidebar';
 import { Badge } from '@mui/material';
 
 
@@ -17,10 +18,15 @@ const Navbar  = () => {
 
   const [Close, setClose] = useState(false);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarbagOpen, setSidebarbagOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleSidebarbagToggle = () => {
+    setSidebarbagOpen(!isSidebarbagOpen);
   };
 
   const closeToggle = () => {
@@ -86,10 +92,11 @@ const Navbar  = () => {
                    <div className='flex max-lg:space-x-[0px]  space-x-[10px]' >
                       <IconButton className='max-lg:hidden' ><Image src={search} alt='search' /></IconButton>
                       <IconButton className='max-lg:hidden' ><Image src={user} alt='user' /></IconButton>
-                      <IconButton> <Badge color="secondary" badgeContent={1} ><Image src={bag} alt='bag' /></Badge></IconButton> 
+                      <IconButton onClick={handleSidebarbagToggle} > <Badge color="secondary" badgeContent={1} ><Image src={bag} alt='bag' /></Badge></IconButton> 
                    </div>
                 </div>
                 <Sidebarmenu  isOpen={isSidebarOpen} onClose={handleSidebarToggle} />
+                <Bagsidebar isOpen={isSidebarbagOpen} onClose={handleSidebarbagToggle} />
             </nav>
 
         </div>
