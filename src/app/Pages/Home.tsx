@@ -1,13 +1,18 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import Carouelbg from '../Components/Carouselbg';
 
-type Props = {}
+
+type Props = {};
 
 function Home({}: Props) {
+
+
   return (
-    <div className='w-full h-[5000px]' >
-      <h1>hello</h1>
-    </div>
-  )
+    <section className='w-full flex justify-center'>
+      <Carouelbg/>
+    </section>
+  );
 }
 
-export default Home
+export default Home;

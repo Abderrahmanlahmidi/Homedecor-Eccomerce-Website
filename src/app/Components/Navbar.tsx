@@ -63,7 +63,7 @@ const Navbar  = () => {
                     <div className='flex items-center  max-sm:space-x-[8px] space-x-[12px]' >
                       <Image className=' max-sm:w-[16px]  max-sm:h-[16px]' src={percentticket} alt={'ticket'} />
                       <p className='font-poppins  max-sm:text-[12px] font-[600] text-[#343839]' >30% off storewide — Limited time !</p>
-                      <div className='flex space-x-[4px] items-center font-poppins' >
+                      <div className='flex space-x-[4px] max-lg:hidden items-center font-poppins' >
                          <a className='underline decoration-1 text-blue font-[500] max-sm:text-[12px] text-[14px]' href="">Show more</a><Image  className='w-[24px] h-[24px] max-sm:w-[16px]  max-sm:h-[16px]' src={arrow} alt='arrow' />
                       </div>
                     </div>
@@ -77,7 +77,7 @@ const Navbar  = () => {
             
             {/*------------------------ Navbar ------------------------------*/}
             <nav className={`bg-white h-[60px] flex justify-center w-full ${hasScrolled ? scrolled : ''}`} >
-                <div className='flex justify-between max-lg:px-[16px] w-[1120px] items-center' >
+                <div className='flex justify-between max-lg:px-[32px] w-[1120px] items-center' >
                     <div className='flex items-center ' >
                       <IconButton onClick={handleSidebarToggle} className='hidden  max-lg:block' ><Image className='w-[24px] text-black max-md:h-[20px] max-md:w-[20px] h-[24px]' src={burger}  alt='burger' /></IconButton>
                       <h3 className='text-black max-md:text-[16px] text-[24px] font-[500] font-poppins' >3legant</h3>
