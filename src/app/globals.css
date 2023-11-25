@@ -8,3 +8,24 @@ body{
     margin-top: 100px;
 }
 
+
+.grid-system{
+    display: grid;
+    max-width: 1120px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+.item-1{
+    grid-row: 2 span;
+}
+
+
+@media (max-width: 768px) { 
+    .grid-system{
+        display: flex;
+        flex-direction: column;
+       
+    }
+ }

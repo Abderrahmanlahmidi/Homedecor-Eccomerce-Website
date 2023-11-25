@@ -33,7 +33,7 @@ const Bagsidebar = ({ isOpen, onClose }: Props) => {
   
     const sidebarVariants: Variants = {
       open: { x: 0, transition: { ease: 'easeInOut', duration: 0.2 } },
-      closed: { x: '100%', transition: { ease: 'easeInOut', duration: 0.2 } }, // Change '100%' for right-to-left animation
+      closed: { x: '100%', transition: { ease: 'easeInOut', duration: 0.2 } },
     };
   
     const bounceTransition = {
