@@ -1,0 +1,112 @@
+[
+
+    
+    {
+       "Title":"Loveseat Sofa",
+       "Starts":4,
+       "Price": 199,
+       "Discount": 50,
+       "Description":"Transform your living space with the Comfort Plus Sofa. Sink into luxury with its plush cushions and ergonomic design. This sofa not only adds style to your home but also provides unmatched comfort. The durable fabric ensures long-lasting quality, making it the perfect centerpiece for family gatherings or cozy movie nights. With a modern aesthetic and a touch of classic charm, the Comfort Plus Sofa is a must-have for any home."
+    },
+    {
+        "Title": "Executive Chair",
+        "Stars": 4.8,
+        "Price": 299.99,
+        "Discount": 15,
+        "Description": "Experience the ultimate in comfort with our Executive ErgoComfort Chair. This ergonomic masterpiece is designed for long hours of productive work. The adjustable lumbar support, padded armrests, and breathable mesh back provide unparalleled comfort. Say goodbye to discomfort and hello to productivity with this stylish and supportive office chair."
+    },
+    {
+        "Title": "Comfy Chair",
+        "Stars": 4.5,
+        "Price": 199.95,
+        "Discount": 10,
+        "Description": "Create your reading haven with our Comfy Haven Reading Chair. Sink into the plush cushions and let the world fade away as you enjoy your favorite book. The wide and cozy design, coupled with soft upholstery, makes this chair perfect for relaxation. Bring warmth and style to your reading nook with this exceptionally comfortable and inviting chair."
+    },
+    {
+        "Title": "Luxe Recliner",
+        "Stars": 4.7,
+        "Price": 349.99,
+        "Discount": 25,
+        "Description": "Indulge in luxury with our Luxe Lounge Recliner. Whether you're watching TV or taking an afternoon nap, this recliner offers the perfect blend of style and comfort. The plush padding, adjustable reclining positions, and premium upholstery create an oasis of relaxation in your living space. Elevate your lounging experience with this stylish and incredibly comfortable recliner."
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "Title": "Premium Toaster",
+        "Stars": 4.4,
+        "Price": 49.99,
+        "Discount": 8,
+        "Description": "Start your mornings with the perfect toast using our Premium 4-Slice Toaster. With its sleek stainless steel design and advanced technology, this toaster is not just an appliance; it's a kitchen essential. The extra-wide slots accommodate various bread sizes, while the adjustable browning settings ensure your toast is just the way you like it. Featuring a convenient bagel function and a high-lift lever for easy retrieval, our toaster combines style, functionality, and precision for a delightful breakfast experience."
+    },
+    {
+        "Title": "Chef's Saucepan",
+        "Stars": 4.7,
+        "Price": 34.99,
+        "Discount": 15,
+        "Description": "Elevate your culinary experience with our Chef's Choice Stainless Steel Saucepan. Crafted with precision and durability in mind, this classic saucepan is a kitchen essential. The stainless steel construction ensures even heat distribution, while the ergonomic handle provides a comfortable grip. The tempered glass lid lets you monitor your cooking without lifting, and the pour spout facilitates mess-free pouring. Upgrade your kitchen with this timeless and versatile saucepan that's perfect for sauces, soups, and more."
+    },
+    {
+        "Title": "Ceramic Saucepan",
+        "Stars": 4.5,
+        "Price": 42.95,
+        "Discount": 12,
+        "Description": "Experience the convenience of non-stick cooking with our Premium Non-Stick Ceramic Saucepan. The ceramic coating ensures easy food release and effortless cleaning. This saucepan is designed for health-conscious cooking with no need for excessive oils or fats. The heat-resistant handle stays cool to the touch, and the tight-fitting lid seals in flavors. Whether you're simmering sauces or reheating leftovers, this saucepan combines modern technology with practicality for a delightful cooking experience."
+    },
+    {
+        "Title": "ProChef Utensil",
+        "Stars": 4.6,
+        "Price": 29.99,
+        "Discount": 10,
+        "Description": "Upgrade your kitchen with the ProChef 10-Piece Cooking Utensil Set, a must-have for every home chef. Crafted from premium stainless steel and durable nylon, these utensils are designed for precision and longevity. The ergonomic handles provide a comfortable grip, and the heat-resistant materials ensure they can handle any cooking task. From flipping pancakes to stirring sauces, this versatile set includes a variety of essential tools. Elevate your culinary skills with this stylish and functional utensil set, making cooking a breeze and adding a touch of professionalism to your kitchen."
+    },
+
+
+
+
+
+
+
+
+
+    
+    {
+        "Title": "Glass Lamp",
+        "Stars": 4.8,
+        "Price": 59.99,
+        "Discount": 12,
+        "Description": "Illuminate your space with the Elegance Glass Table Lamp, a perfect blend of modern design and sophistication. The base, crafted from high-quality glass, reflects a contemporary aesthetic, while the linen drum shade provides a soft and warm glow. This lamp is not just a source of light; it's a statement piece that adds style to any room. Whether placed on a bedside table or as a focal point in your living room, the Elegance Glass Table Lamp effortlessly combines form and function to create a welcoming ambiance."
+    },
+    {
+        "Title": "Brass Lamp",
+        "Stars": 4.6,
+        "Price": 79.95,
+        "Discount": 15,
+        "Description": "Add a touch of timeless charm to your decor with our Vintage Brass Accent Lamp. The intricately designed brass base exudes vintage elegance, making it a perfect addition to traditional or eclectic interiors. The tapered fabric shade casts a warm and inviting light, creating a cozy atmosphere. Whether you're creating a reading nook or enhancing your office space, this lamp brings a sense of nostalgia and sophistication to any room. Elevate your lighting experience with the Vintage Brass Accent Lamp."
+    },
+    {
+        "Title": "Natural Basket",
+        "Stars": 4.7,
+        "Price": 34.99,
+        "Discount": 10,
+        "Description": "Organize your space with the Natural Elegance Bamboo Basket Set, a harmonious blend of functionality and aesthetics. Handwoven with care, these baskets are crafted from sustainable bamboo, adding a touch of natural elegance to your home. The set includes three different sizes, perfect for storing anything from blankets and pillows to toys and magazines. The sturdy construction ensures durability, while the earthy tones and texture of bamboo bring a warm and inviting feel to any room. Transform your living space with these versatile and eco-friendly storage baskets."
+    },
+    {
+        "Title": "Picnic Basket",
+        "Stars": 4.5,
+        "Price": 42.95,
+        "Discount": 15,
+        "Description": "Upgrade your outdoor adventures with the Picnic Perfect Bamboo Basket. This beautifully crafted basket, made from natural bamboo, is not only a stylish accessory but also a functional addition to your picnics. The spacious interior provides ample room for your favorite snacks, utensils, and a cozy blanket. The sturdy handles make it easy to carry, and the secure latches ensure everything stays in place during your outings. Embrace the charm of eco-friendly materials and make your picnics unforgettable with the Picnic Perfect Bamboo Basket."
+    }
+
+
+
+   
+]
+   

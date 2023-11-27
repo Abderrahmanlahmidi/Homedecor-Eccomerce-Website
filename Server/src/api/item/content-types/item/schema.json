@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Ratings": {
+      "type": "integer"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Discount": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Categorys": {
+      "type": "enumeration",
+      "enum": [
+        "New Arrivals",
+        "Living Room",
+        "Bedroom",
+        "Kitchen"
+      ]
+    }
+  }
+}
