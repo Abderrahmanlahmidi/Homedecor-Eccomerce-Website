@@ -1,9 +1,25 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google'
-import './globals.css'
-
-
+import { Provider } from 'react-redux';
+import { configureStore } from '@reduxjs/toolkit';
+import cartReducer from "./State";
+import './globals.css';
+import React from 'react';
 const inter = Inter({ subsets: ['latin'] })
+
+const store = configureStore({
+  reducer: {
+      cart: cartReducer,
+  }
+})
+
+type ReduxProviderProps = {
+  children: React.ReactNode;
+}
+
+function ReduxProvider({children}: ReduxProviderProps){
+  return <Provider store={store} >{children}</Provider>
+}
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,11 +31,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    
-       <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-  
+
+return (
+    <html lang="en"> 
+      <ReduxProvider>
+        <body className={inter.className}>{children}</body>   
+      </ReduxProvider>
+    </html>
   )
 }
+
+

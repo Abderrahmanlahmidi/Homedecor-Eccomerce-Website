@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Navbar from './Components/Navbar'
+import Navbar from '@/app/Global/Navbar'
 import Home from './Pages/Home'
 
 

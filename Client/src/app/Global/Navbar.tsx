@@ -9,8 +9,8 @@ import bag from "@/app/assets/icons/shopping-bag.png"
 import search from "@/app/assets/icons/search.png"
 import burger from "@/app/assets/icons/burger.svg"
 import IconButton from '@mui/material/IconButton';
-import Sidebarmenu from "./Sidebarmenu"
-import Bagsidebar from './Bagsidebar';
+import Sidebarmenu from "@/app/Components/Sidebarmenu";
+import Bagsidebar from '@/app/Components/Bagsidebar';
 import { Badge } from '@mui/material';
 
 

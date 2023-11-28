@@ -25,7 +25,6 @@ body{
 
 @media (max-width: 768px) {
 
-
     .item-1{
         grid-column: 2 span;
     }
@@ -37,11 +36,5 @@ body{
     .item-3{
         grid-column: 2 span;
     }
-
-
-
-
-  
-   
 
 }
