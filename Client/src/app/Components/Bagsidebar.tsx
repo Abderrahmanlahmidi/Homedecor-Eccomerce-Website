@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import { motion, useAnimation, Variants } from 'framer-motion';
-
+import Cart from './Cart';
 
 type Props = {
   isOpen: boolean;
@@ -51,16 +51,23 @@ const Bagsidebar = ({ isOpen, onClose }: Props) => {
         onClick={onClose}
       >
         <motion.div
-          className="flex w-[343px] absolute right-0 bg-white h-full p-[24px]"
+          className="flex  max-md:w-[343px] w-[413px] absolute right-0 bg-white h-full px-[24px] py-[40px]"
           initial="closed"
           animate={controls}
           variants={sidebarVariants}
           transition={bounceTransition}
           onClick={(e) => e.stopPropagation()}
         >
-          <div className='w-full space-y-[16px]'>
-            {/* Your sidebar content goes here */}
+          <div className='w-full' >
+          <div className='w-full' >
+             <h3 className='text-[28px] font-[500]' >Cart</h3>
           </div>
+            
+            <Cart/>
+          </div>
+           
+
+    
         </motion.div>
       </motion.div>
     );
