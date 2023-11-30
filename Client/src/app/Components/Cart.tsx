@@ -19,6 +19,7 @@ const Cart = () => {
 
 
     return ( 
+
         <div className='w-full py-[24px] border-b border-1 border-b-[#E8ECEF]'>
            {/*the image the title product*/}
            <div className='flex w-full justify-between' >
@@ -49,11 +50,11 @@ const Cart = () => {
             {/*the price and remove button product */}
             <div>
               <p className='text-[14px] font-[600]' >$19.19</p>
+              <p className='text-[14px] font-[600]' >$19.19</p>
               <button className='ml-[22px] mt-[8px]'>
                 <Image src={remove} alt='close' />
               </button>
             </div>
-
           </div>
       </div>
      );
