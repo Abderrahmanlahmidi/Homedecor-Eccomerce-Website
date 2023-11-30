@@ -1,15 +1,31 @@
-import Image from 'next/image';
+"use client"
+import Image from 'next/image'
 import product from "../assets/products/Product-1.png"
 import add from "../assets/icons/Add.svg"
 import minus from "../assets/icons/Minus.svg"
 import remove from "../assets/icons/removecart.png"
+import { useDispatch, useSelector } from 'react-redux'
+import {
+  decreaseCount,
+  increaseCount,
+  removeFromCart,
+  setIsCartOpen,
+} from "../state";
+
+
 
 
 const Cart = () => {
-    return ( 
-        <div className='w-full space-y-[16px]'>
-          
 
+  const dispatch = useDispatch();
+  //const cart = useSelector((state) => state.cart.cart)
+  const cart = [];
+  
+  //const totalPrice = cart.reduce((total, item) => )
+
+
+    return ( 
+        <div className='w-full py-[24px] border-b border-1 border-b-[#E8ECEF]'>
            {/*the image the title product*/}
            <div className='flex w-full justify-between' >
             <div className='flex space-x-[16px]'>
@@ -38,7 +54,7 @@ const Cart = () => {
             </div>
             {/*the price and remove button product */}
             <div>
-              <p>$19.19</p>
+              <p className='text-[14px] font-[600]' >$19.19</p>
               <button className='ml-[22px] mt-[8px]'>
                 <Image src={remove} alt='close' />
               </button>

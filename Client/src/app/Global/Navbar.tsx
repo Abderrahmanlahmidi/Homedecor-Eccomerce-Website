@@ -10,9 +10,9 @@ import search from "@/app/assets/icons/search.png"
 import burger from "@/app/assets/icons/burger.svg"
 import IconButton from '@mui/material/IconButton';
 import Sidebarmenu from "@/app/Components/Sidebarmenu";
-import Bagsidebar from '@/app/Components/Bagsidebar';
-import { Badge } from '@mui/material';
+import CartMenu from '@/app/Components/CartMenu';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { Badge } from '@mui/material';
 
 
 
@@ -22,10 +22,12 @@ const Navbar  = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isSidebarbagOpen, setSidebarbagOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  
-  
-
   const Linkstyle = "font-Grotesk text-[14px] font-[500] text-[#6C7275] hover:text-black transition delay-75"
+
+ // const cart = useSelector((state) => state.cart.cart)
+
+ const cart = [1];
+
 
   const handleSidebarToggle = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -106,11 +108,19 @@ const Navbar  = () => {
                    <div className='flex max-lg:space-x-[0px]  space-x-[10px]' >
                       <IconButton className='max-lg:hidden' ><Image src={search} alt='search' /></IconButton>
                       <IconButton className='max-lg:hidden' ><Image src={user} alt='user' /></IconButton>
-                      <IconButton onClick={handleSidebarbagToggle} > <Badge color="secondary" invisible={0} badgeContent={1} ><Image src={bag} alt='bag' /></Badge></IconButton> 
+                      <IconButton onClick={handleSidebarbagToggle} > 
+                        <Badge 
+                          color="secondary" 
+                          invisible={cart.length === 0} 
+                          badgeContent={cart.length} 
+                        > 
+                           <Image src={bag} alt='bag' />
+                        </Badge>
+                      </IconButton> 
                    </div>
                 </div>
                 <Sidebarmenu  isOpen={isSidebarOpen} onClose={handleSidebarToggle} />
-                <Bagsidebar isOpen={isSidebarbagOpen} onClose={handleSidebarbagToggle} />
+                <CartMenu isOpen={isSidebarbagOpen} onClose={handleSidebarbagToggle} />
             </nav>
 
         </div>

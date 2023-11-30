@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
 import { motion, useAnimation, Variants } from 'framer-motion';
-import Cart from './Cart';
+
 
 type Props = {
   isOpen: boolean;
@@ -9,8 +9,7 @@ type Props = {
 };
 
 
-
-const Bagsidebar = ({ isOpen, onClose }: Props) => {
+const CartMenu = ({ isOpen, onClose }: Props) => {
     const controls = useAnimation();
     const [isOverlayVisible, setOverlayVisible] = useState(isOpen);
   
@@ -43,6 +42,7 @@ const Bagsidebar = ({ isOpen, onClose }: Props) => {
     };
   
     return (
+
       <motion.div
         className={`fixed top-0 left-0 h-full w-full bg-overlay z-50 ${isOverlayVisible ? 'block' : 'hidden'}`}
         initial="closed"
@@ -51,27 +51,30 @@ const Bagsidebar = ({ isOpen, onClose }: Props) => {
         onClick={onClose}
       >
         <motion.div
-          className="flex  max-md:w-[343px] w-[413px] absolute right-0 bg-white h-full px-[24px] py-[40px]"
+          className="flex   max-md:w-[343px] w-[413px] absolute right-0 bg-white h-full px-[24px] py-[40px]"
           initial="closed"
           animate={controls}
           variants={sidebarVariants}
           transition={bounceTransition}
           onClick={(e) => e.stopPropagation()}
         >
-          <div className='w-full' >
-          <div className='w-full' >
+          <div className='w-full flex flex-col justify-between' >
+          
+          <div className='w-full  space-y-[16px]' >
              <h3 className='text-[28px] font-[500]' >Cart</h3>
           </div>
-            
-            <Cart/>
-          </div>
-           
 
-    
+
+          <div>
+              
+          </div>   
+
+          </div>
         </motion.div>
       </motion.div>
+
     );
   };
   
-  export default Bagsidebar;
+  export default CartMenu;
   
