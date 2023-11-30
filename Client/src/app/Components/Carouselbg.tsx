@@ -43,7 +43,9 @@ const Carouelbg = () => {
           loop={true}
           onSlideChange={(swiper) => console.log('Slide changed: ', swiper.activeIndex)}
           onSwiper={(swiper) => console.log('Swiper instance:', swiper)}
-          style={{ '--swiper-navigation-color': customStyles.navigation.color, '--swiper-pagination-color': customStyles.pagination.color }}
+          style={
+            //@ts-ignore
+            { '--swiper-navigation-color': customStyles.navigation.color, '--swiper-pagination-color': customStyles.pagination.color }}
       >
         {backgrounds.map((background, index) => (
           <SwiperSlide  key={index}>
